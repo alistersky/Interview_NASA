@@ -9,7 +9,7 @@ import retrofit2.http.Query;
 
 public interface NearEarthObjectService {
 
-   @GET("/rest/v1/feed")
+    @GET("/rest/v1/feed")
     Call<NearEarthObjectFeed> feed(@Query("start_date") String startDate,
                                    @Query("end_date") String endDate,
                                    @Query("detailed") String detailed,
