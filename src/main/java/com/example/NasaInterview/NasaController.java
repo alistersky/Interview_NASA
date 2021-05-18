@@ -16,8 +16,8 @@ public class NasaController {
     }
 
     @GetMapping("/neo")
-    public String neoHazards(@RequestParam(value = "id", defaultValue = "3709286") String id) throws IOException {
-        return nasaService.getNearEarthObjectIsHazard(id);
+    public Asteroid neoHazards(@RequestParam(value = "id", defaultValue = "3709286") String id) throws IOException {
+        return nasaService.getNearEarthObject(id);
     }
 
     @GetMapping("/neolist")
@@ -26,7 +26,7 @@ public class NasaController {
     }
 
     @GetMapping("/collision")
-    public String areWeGoingToDieSoon(){
+    public String areWeGoingToDie(){
         return "";
     }
 
