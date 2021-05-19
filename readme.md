@@ -12,4 +12,7 @@ In the _com.example.NasaInterview_ package in addition to the controller there a
 2. _ImpactType_ an enum used to determine asteroid threat
 3. _Configuration_ containing a Spring Bean that provides a connection to the NASA API
 
-Please feel free to create any further classes, tests or methods that you deem neccesary to complete the exercise.
+Please feel free to create any further classes, tests or methods that you deem necessary to complete the exercise.
+
+#### NOTE
+For an NASA api_key please use "DEMO_KEY", this is throttled but fine for our purposes

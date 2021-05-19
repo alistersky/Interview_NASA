@@ -20,7 +20,7 @@ public class NasaController {
     */
     @GetMapping("/asteroid")
     public Asteroid neoHazards(@RequestParam(value = "id", defaultValue = "3709286") String id) throws IOException {
-        return null;
+        return null; // TODO
     }
 
     /**
@@ -32,7 +32,7 @@ public class NasaController {
      */
     @GetMapping("/asteroids")
     public List<Asteroid> neoList(@RequestParam(value = "startDate", defaultValue = "2021-05-08") String startDate) throws IOException {
-        return null;
+        return null; // TODO
     }
 
     /**
@@ -44,7 +44,7 @@ public class NasaController {
      */
     @GetMapping("/collision")
     public boolean areWeGoingToDie(@RequestParam(value = "startDate", defaultValue = "2021-05-08") String startDate) throws IOException {
-        return false;
+        return false; // TODO
     }
 
 }

@@ -7,6 +7,12 @@ import retrofit2.http.GET;
 import retrofit2.http.Path;
 import retrofit2.http.Query;
 
+/**
+ * NOTE:
+ * For an "api_key" please use "DEMO_KEY", this is throttled
+ * but fine for our purposes.
+ * For the "detailed" param please use false.
+ */
 public interface NearEarthObjectService {
 
     @GET("/rest/v1/feed")
