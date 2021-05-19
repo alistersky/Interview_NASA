@@ -13,12 +13,6 @@ import java.util.List;
 @RestController
 public class NasaController {
 
-    private final NasaService nasaService;
-
-    public NasaController(NasaService nasaService) {
-        this.nasaService = nasaService;
-    }
-
     /**
     * This endpoint will return a single Asteroid's details
     * @param  id The NASA NEO id
@@ -26,7 +20,7 @@ public class NasaController {
     */
     @GetMapping("/asteroid")
     public Asteroid neoHazards(@RequestParam(value = "id", defaultValue = "3709286") String id) throws IOException {
-        return nasaService.getNearEarthObject(id);
+        return null;
     }
 
     /**
@@ -38,7 +32,7 @@ public class NasaController {
      */
     @GetMapping("/asteroids")
     public List<Asteroid> neoList(@RequestParam(value = "startDate", defaultValue = "2021-05-08") String startDate) throws IOException {
-        return nasaService.getNearEarthObjectList(startDate);
+        return null;
     }
 
     /**
@@ -50,13 +44,7 @@ public class NasaController {
      */
     @GetMapping("/collision")
     public boolean areWeGoingToDie(@RequestParam(value = "startDate", defaultValue = "2021-05-08") String startDate) throws IOException {
-        return nasaService.getNearEarthObjectList(startDate).stream().anyMatch(ast -> {
-            if( ast.getImpactType().ordinal() >= ImpactType.LIFEKILLER.ordinal() ){
-                return true;
-            }
-
-            return false;
-        });
+        return false;
     }
 
 }
