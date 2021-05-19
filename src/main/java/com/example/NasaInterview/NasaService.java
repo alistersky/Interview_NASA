@@ -26,12 +26,6 @@ public class NasaService {
 
         Response<NearEarthObject> response = nearEarthObjectService.nearEarthObject(id,"DEMO_KEY").execute();
 
-
-
-
-
-
-
         return asteroidMapper.convert(response.body());
     }
 

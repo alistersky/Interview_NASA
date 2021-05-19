@@ -4,17 +4,17 @@ public class Asteroid {
 
     private String nasaId;
     private String name;
-    private Float milesPerHour;
+    private Float velocityMilesPerHour;
     private Float missDistanceInMiles;
     private ImpactType impactType;
 
     public Asteroid() {
     }
 
-    public Asteroid(String nasaId, String name, Float milesPerHour, Float missDistanceInMiles, ImpactType impactType) {
+    public Asteroid(String nasaId, String name, Float velocityMilesPerHour, Float missDistanceInMiles, ImpactType impactType) {
         this.nasaId = nasaId;
         this.name = name;
-        this.milesPerHour = milesPerHour;
+        this.velocityMilesPerHour = velocityMilesPerHour;
         this.missDistanceInMiles = missDistanceInMiles;
         this.impactType = impactType;
     }
@@ -35,12 +35,12 @@ public class Asteroid {
         this.name = name;
     }
 
-    public Float getMilesPerHour() {
-        return milesPerHour;
+    public Float getVelocityMilesPerHour() {
+        return velocityMilesPerHour;
     }
 
-    public void setMilesPerHour(Float milesPerHour) {
-        this.milesPerHour = milesPerHour;
+    public void setVelocityMilesPerHour(Float velocityMilesPerHour) {
+        this.velocityMilesPerHour = velocityMilesPerHour;
     }
 
     public Float getMissDistanceInMiles() {

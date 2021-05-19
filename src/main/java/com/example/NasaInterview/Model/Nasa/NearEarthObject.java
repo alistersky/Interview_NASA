@@ -40,7 +40,7 @@ public class NearEarthObject {
     private EstimatedDiameter estimatedDiameter;
     @JsonProperty("is_potentially_hazardous_asteroid")
     private Boolean isPotentiallyHazardousAsteroid;
-    @JsonProperty("close_approach_data")
+    @JsonProperty("close_approach_data") // Will only be a single element if query time scale is a week
     private List<CloseApproachDatum> closeApproachData = null;
     @JsonProperty("is_sentry_object")
     private Boolean isSentryObject;

@@ -18,8 +18,6 @@ public class AsteroidMapper {
     }
 
     private ImpactType mapToImpactEnum(boolean isHazard, Double diameterInMetres) {
-        if(!isHazard)
-            return ImpactType.NODANGER;
-        return ImpactType.range(diameterInMetres.intValue());
+        return ImpactType.determineThreat(isHazard,diameterInMetres.intValue());
     }
 }

@@ -14,6 +14,8 @@ public interface NearEarthObjectService {
                                    @Query("end_date") String endDate,
                                    @Query("detailed") String detailed,
                                    @Query("api_key") String apiKey);
+
+    // the default end date is 7 days after the start date
     @GET("/rest/v1/feed")
     Call<NearEarthObjectFeed> feed(@Query("start_date") String startDate,
                                    @Query("detailed") String detailed,
