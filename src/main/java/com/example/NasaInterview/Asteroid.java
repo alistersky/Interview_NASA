@@ -2,8 +2,8 @@ package com.example.NasaInterview;
 
 public class Asteroid {
 
-    private String nasaId;
-    private String name;
+    private String nasaId; // the same as the Nasa NEO id
+    private String name; // the same as the Nasa NEO name
     private Float velocityMilesPerHour;
     private Float missDistanceInMiles;
     private ImpactType impactType;

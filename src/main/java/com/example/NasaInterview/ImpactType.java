@@ -26,15 +26,15 @@ public enum ImpactType {
     /**
      * Given a hazard determination and a size, return the corresponding ImpactType
      * @param isHazard boolean indicating near earth object threat level
-     * @param size the diameter in Metres of the near earth object
+     * @param sizeInMeters the diameter in Metres of the near earth object
      * @return ImpactType based on params provided
      */
-    public static ImpactType determineThreat(boolean isHazard, int size) {
+    public static ImpactType determineThreat(boolean isHazard, int sizeInMeters) {
         if(!isHazard)
             return ImpactType.NODANGER;
 
         return Arrays.stream(ImpactType.values())
-                .filter(range -> size >= range.minValue && size <= range.maxValue)
+                .filter(range -> sizeInMeters >= range.minValue && sizeInMeters <= range.maxValue)
                 .findAny()
                 .orElse(NODANGER);
     }

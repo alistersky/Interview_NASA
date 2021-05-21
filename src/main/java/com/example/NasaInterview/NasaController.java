@@ -9,6 +9,8 @@ import java.util.List;
 
 /**
  * Please provide the missing endpoint implementations
+ * NOTE: all data to create an Asteroid is available
+ * from the NASA NEO API
  */
 @RestController
 public class NasaController {
