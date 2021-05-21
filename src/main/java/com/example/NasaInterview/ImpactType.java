@@ -29,7 +29,7 @@ public enum ImpactType {
      * @param size the diameter in Metres of the near earth object
      * @return ImpactType based on params provided
      */
-    public static ImpactType determineThreat(boolean isHazard, int size) {
+    public static ImpactType determineThreat(boolean isHazard, double size) {
         if(!isHazard)
             return ImpactType.NODANGER;
 
