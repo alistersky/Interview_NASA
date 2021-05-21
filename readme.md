@@ -15,7 +15,12 @@ In the _com.example.NasaInterview_ package in addition to the controller there a
 Please feel free to create any further classes, tests or methods that you deem necessary to complete the exercise.
 
 #### NOTE
-For an NASA api_key please use "DEMO_KEY", this is throttled but fine for our purposes
+
+
+For the sake of simplicity on the NearEarthObject class treat the CloseApproachDatum
+List "closeApproachData" as if it only ever contains 1 element.
+
+Where a NASA api_key is required please use the value "DEMO_KEY", this is throttled but fine for our purposes
 
 #### LINKS
 

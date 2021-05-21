@@ -24,6 +24,10 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
         "is_sentry_object"
 })
 
+/**
+ * NOTE: for the sake of simplicity treat the CloseApproachDatum
+ * List closeApproachData as if it only ever contains 1 element
+ */
 public class NearEarthObject {
 
     @JsonProperty("id")
