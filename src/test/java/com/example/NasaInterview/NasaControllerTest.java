@@ -19,7 +19,7 @@ class NasaControllerTest {
         Asteroid returnedAstroid = new Asteroid() ;
         Mockito.when(mock.getNearEarthObject("1")).thenReturn(returnedAstroid);
 
-        Asteroid asteroid = nasaController.neoHazards("1");
+        Asteroid asteroid = nasaController.asteroid("1");
 
         Assertions.assertEquals(asteroid, returnedAstroid);
     }
@@ -29,7 +29,7 @@ class NasaControllerTest {
         Asteroid returnedAstroid = new Asteroid() ;
         Mockito.when(mock.getNearEarthObjectList("1")).thenReturn(Arrays.asList(returnedAstroid));
 
-        List<Asteroid> asteroid = nasaController.neoList("1");
+        List<Asteroid> asteroid = nasaController.asteroids("1");
 
         Assertions.assertEquals(asteroid,(Arrays.asList(returnedAstroid)));
     }
