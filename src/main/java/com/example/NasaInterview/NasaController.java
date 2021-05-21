@@ -19,7 +19,7 @@ public class NasaController {
     * @return a single Asteroid object corresponding to the id
     */
     @GetMapping("/asteroid")
-    public Asteroid neoHazards(@RequestParam(value = "id", defaultValue = "3709286") String id) throws IOException {
+    public Asteroid asteroid(@RequestParam(value = "id", defaultValue = "3709286") String id) throws IOException {
         return null; // TODO
     }
 
@@ -31,7 +31,7 @@ public class NasaController {
      * @throws IOException
      */
     @GetMapping("/asteroids")
-    public List<Asteroid> neoList(@RequestParam(value = "startDate", defaultValue = "2021-05-08") String startDate) throws IOException {
+    public List<Asteroid> asteroids(@RequestParam(value = "startDate", defaultValue = "2021-05-08") String startDate) throws IOException {
         return null; // TODO
     }
 
