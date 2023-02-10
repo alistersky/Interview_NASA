@@ -12,12 +12,16 @@ Two Java packages and a Spring Bean have been provided that should make getting 
 2. _com.example.NasaInterview.Service.Nasa_ defines calls using Retrofit2 that can be made to the NASA NEO API
 3. The _com.example.NasaInterview.Configuration_ class contains a Spring Bean that provides a connection to the NASA API
 
-In the _com.example.NasaInterview_ package in addition to the controller there are further helper classes defined:
+In the _com.example.NasaInterview_ package in addition to the controller there are further classes defined:
 1. _Asteroid_ which is the main type returned by the _NasaController_ endpoints
-2. _ImpactType_ an enum used to determine asteroid threat
+2. _AsteroidMapper_ which turns a NASA NEO into our apps _Asteroid_ model class
+3. _ImpactType_ an enum used to determine asteroid threat
+4. _NasaNearEarthObject_ a type that encapsulates the logic our controller requires from the NASA API
+5. _NearEarthObject_ an interface that abstracts the NEO type so we could implement with data from another organization 
 
+There are a few JUnit tests that fail, they should pass by the end of the exercise. 
 
-Please feel free to create any further classes, tests or methods that you deem necessary to complete the exercise.
+Please replace the TODO placeholders with method implementations that you deem necessary to complete the exercise.
 
 #### NOTE
 
