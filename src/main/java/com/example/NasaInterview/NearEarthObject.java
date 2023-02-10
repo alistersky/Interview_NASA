@@ -11,5 +11,5 @@ public interface NearEarthObject {
 
     List<Asteroid> getNearEarthObjectListToday() throws IOException;
 
-    List<Asteroid> getNearEarthObjectList(String startDate) throws IOException;
+    Boolean IsDangerousObjectImpactLikely(String startDate) throws IOException;
 }

@@ -36,10 +36,10 @@ class NasaControllerTest {
 
     @Test
     void areWeGoingToDieReturnsTrue() throws IOException {
-        Asteroid returnedAsteroid = new Asteroid();
+        Asteroid returnedAsteroid = new Asteroid() ;
         returnedAsteroid.setImpactType(ImpactType.PLANETKILLER);
 
-        Mockito.when(mock.getNearEarthObjectList("1")).thenReturn(Arrays.asList(returnedAsteroid));
+        Mockito.when(mock.IsDangerousObjectImpactLikely("1")).thenReturn(true);
 
         boolean areWeGoingToDie = nasaController.areWeGoingToDie("1");
 

@@ -22,7 +22,7 @@ public class NasaNearEarthObject implements NearEarthObject{
     }
 
     @Override
-    public List<Asteroid> getNearEarthObjectList(String startDate) throws IOException {
-        return null; //TODO
+    public Boolean IsDangerousObjectImpactLikely(String startDate) throws IOException {
+        return false; //TODO
     }
 }
