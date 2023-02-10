@@ -21,15 +21,15 @@ public interface NearEarthObjectService {
     @GET("/rest/v1/neo/{id}")
     Call<NearEarthObject> nearEarthObject(@Path("id") String asteroidId, @Query("api_key") String apiKey);
 
+    // get today's NEO's
+    @GET("/rest/v1/feed/today")
+    Call<NearEarthObjectFeed> feedToday(@Query("detailed") String detailed,
+                                        @Query("api_key") String apiKey);
+
     // the default end date is 7 days after the start date
     @GET("/rest/v1/feed")
     Call<NearEarthObjectFeed> feed(@Query("start_date") String startDate,
                                    @Query("detailed") String detailed,
                                    @Query("api_key") String apiKey);
-
-    // get today's NEO's
-    @GET("/rest/v1/feed/today")
-    Call<NearEarthObjectFeed> feedToday(@Query("detailed") String detailed,
-                                        @Query("api_key") String apiKey);
 
 }
