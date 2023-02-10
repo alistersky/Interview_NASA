@@ -22,7 +22,7 @@ public class NasaController {
     */
     @GetMapping("/asteroid")
     public Asteroid asteroid(@RequestParam(value = "id", defaultValue = "3709286") String id) throws IOException {
-        return null; // TODO
+        return null; //TODO
     }
 
     /**
@@ -33,8 +33,8 @@ public class NasaController {
      * @throws IOException
      */
     @GetMapping("/asteroids")
-    public List<Asteroid> asteroids(@RequestParam(value = "startDate", defaultValue = "2021-05-08") String startDate) throws IOException {
-        return null; // TODO
+    public List<Asteroid> asteroids(@RequestParam(value = "startDate", defaultValue = "2023-02-10") String startDate) throws IOException {
+        return null; //TODO
     }
 
     /**
@@ -45,8 +45,8 @@ public class NasaController {
      * @throws IOException
      */
     @GetMapping("/collision")
-    public boolean areWeGoingToDie(@RequestParam(value = "startDate", defaultValue = "2021-05-08") String startDate) throws IOException {
-        return false; // TODO
+    public boolean areWeGoingToDie(@RequestParam(value = "startDate", defaultValue = "2023-02-10") String startDate) throws IOException {
+        return false; //TODO
     }
 
 }

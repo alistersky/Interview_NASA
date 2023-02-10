@@ -2,6 +2,10 @@ package com.example.NasaInterview;
 
 import java.util.Arrays;
 
+/**
+* READ ONLY - DO NOT MODIFY
+*/
+
 public enum ImpactType {
     NODANGER,
     DUCK(1, 50),

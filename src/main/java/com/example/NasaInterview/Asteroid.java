@@ -1,5 +1,8 @@
 package com.example.NasaInterview;
 
+/**
+ * READ ONLY - DO NOT MODIFY
+ */
 public class Asteroid {
 
     private String nasaId; // the same as the Nasa NEO id

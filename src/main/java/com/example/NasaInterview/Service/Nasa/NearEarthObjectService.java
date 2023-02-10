@@ -7,7 +7,9 @@ import retrofit2.http.GET;
 import retrofit2.http.Path;
 import retrofit2.http.Query;
 
+
 /**
+ * READ ONLY - DO NOT MODIFY
  * NOTE:
  * For an "api_key" please use "DEMO_KEY", this is throttled
  * but fine for our purposes.
@@ -24,5 +26,10 @@ public interface NearEarthObjectService {
     Call<NearEarthObjectFeed> feed(@Query("start_date") String startDate,
                                    @Query("detailed") String detailed,
                                    @Query("api_key") String apiKey);
+
+    // get today's NEO's
+    @GET("/rest/v1/feed/today")
+    Call<NearEarthObjectFeed> feedToday(@Query("detailed") String detailed,
+                                        @Query("api_key") String apiKey);
 
 }

@@ -5,6 +5,9 @@ import org.springframework.context.annotation.Bean;
 import retrofit2.Retrofit;
 import retrofit2.converter.jackson.JacksonConverterFactory;
 
+/**
+ * READ ONLY - DO NOT MODIFY
+ */
 @org.springframework.context.annotation.Configuration
 public class Configuration {
 
