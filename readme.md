@@ -25,7 +25,7 @@ Please replace the TODO placeholders with method implementations that you deem n
 
 #### NOTE
 
-For the sake of simplicity on the NearEarthObject class treat the CloseApproachDatum
+For the sake of simplicity on the NearEarthObject class when requiring distance or velocity treat the CloseApproachDatum
 List "closeApproachData" as if it only ever contains 1 element.
 
 Where a NASA api_key is required please use the value "DEMO_KEY", this is throttled but fine for our purposes
