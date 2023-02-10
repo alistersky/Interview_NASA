@@ -3,7 +3,7 @@ package com.example.NasaInterview;
 import java.util.Arrays;
 
 /**
-* READ ONLY - DO NOT MODIFY
+* READ ONLY - DO NOT MODIFY - helper enum to determine threat type of NEO
 */
 
 public enum ImpactType {

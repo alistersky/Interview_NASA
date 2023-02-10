@@ -1,11 +1,11 @@
 package com.example.NasaInterview;
 
 /**
- * READ ONLY - DO NOT MODIFY
+ * READ ONLY - DO NOT MODIFY - our model of an NEO
  */
 public class Asteroid {
 
-    private String nasaId; // the same as the Nasa NEO id
+    private String nasaId; // for simplicity this is the same as the Nasa NEO id
     private String name; // the same as the Nasa NEO name
     private Float velocityMilesPerHour;
     private Float missDistanceInMiles;

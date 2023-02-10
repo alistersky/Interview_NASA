@@ -6,7 +6,7 @@ import retrofit2.Retrofit;
 import retrofit2.converter.jackson.JacksonConverterFactory;
 
 /**
- * READ ONLY - DO NOT MODIFY
+ * READ ONLY - DO NOT MODIFY - helper bean using Retrofit lib
  */
 @org.springframework.context.annotation.Configuration
 public class Configuration {
