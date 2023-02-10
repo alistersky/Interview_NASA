@@ -26,14 +26,13 @@ public class NasaController {
     }
 
     /**
-     * This endpoint will, given a start date return all asteroids that qualify as
-     * Near Earth Objects (NEO) within 7 days
-     * @param startDate a date as a string in format YYYY-MM-DD
+     * This endpoint will, return all asteroids that qualify as
+     * Near Earth Objects (NEO) today
      * @return a list of Asteroids
      * @throws IOException
      */
-    @GetMapping("/asteroids")
-    public List<Asteroid> asteroids(@RequestParam(value = "startDate", defaultValue = "2023-02-10") String startDate) throws IOException {
+    @GetMapping("/today")
+    public List<Asteroid> asteroids() throws IOException {
         return null; //TODO
     }
 
