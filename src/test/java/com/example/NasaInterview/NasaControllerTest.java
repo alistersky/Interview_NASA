@@ -10,27 +10,39 @@ import java.util.List;
 
 class NasaControllerTest {
 
-    @Test
-    void asteroid() throws IOException {
+    private NasaNearEarthObject mock = Mockito.mock(NasaNearEarthObject.class);
+    private NasaController nasaController = new NasaController(mock);
 
-        Assertions.assertEquals(1, 2);
+
+    @Test
+    void neoHazard() throws IOException {
+        Asteroid returnedAsteroid = new Asteroid();
+        Mockito.when(mock.getNearEarthObject("1")).thenReturn(returnedAsteroid);
+
+        Asteroid asteroid = nasaController.asteroid("1");
+
+        Assertions.assertEquals(asteroid, returnedAsteroid);
     }
 
     @Test
-    void asteroidList() throws IOException {
+    void neoListToday() throws IOException {
+        Asteroid returnedAsteroid = new Asteroid();
+        Mockito.when(mock.getNearEarthObjectListToday()).thenReturn(Arrays.asList(returnedAsteroid));
 
-        Assertions.assertEquals(1,2);
+        List<Asteroid> asteroid = nasaController.asteroidsToday();
+
+        Assertions.assertEquals(asteroid,(Arrays.asList(returnedAsteroid)));
     }
 
     @Test
     void areWeGoingToDieReturnsTrue() throws IOException {
+        Asteroid returnedAsteroid = new Asteroid();
+        returnedAsteroid.setImpactType(ImpactType.PLANETKILLER);
 
-        Assertions.assertTrue(false);
-    }
+        Mockito.when(mock.getNearEarthObjectList("1")).thenReturn(Arrays.asList(returnedAsteroid));
 
-    @Test
-    void areWeGoingToDieReturnsFalse() throws IOException {
+        boolean areWeGoingToDie = nasaController.areWeGoingToDie("1");
 
-        Assertions.assertFalse(true);
+        Assertions.assertTrue(areWeGoingToDie);
     }
 }

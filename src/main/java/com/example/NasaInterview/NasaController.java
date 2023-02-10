@@ -15,6 +15,12 @@ import java.util.List;
 @RestController
 public class NasaController {
 
+    private final NasaNearEarthObject nasaNearEarthObject;
+
+    public NasaController(NasaNearEarthObject nasaNearEarthObject) {
+        this.nasaNearEarthObject = nasaNearEarthObject;
+    }
+
     /**
     * This endpoint will return a single Asteroid's details
     * @param  id The NASA NEO id
@@ -32,7 +38,7 @@ public class NasaController {
      * @throws IOException
      */
     @GetMapping("/today")
-    public List<Asteroid> asteroids() throws IOException {
+    public List<Asteroid> asteroidsToday() throws IOException {
         return null; //TODO
     }
 

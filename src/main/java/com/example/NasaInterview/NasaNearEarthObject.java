@@ -5,6 +5,9 @@ import org.springframework.stereotype.Service;
 import java.io.IOException;
 import java.util.List;
 
+/**
+ * Get NASA API data and convert to Asteroid(s)
+ * */
 @Service
 public class NasaNearEarthObject implements NearEarthObject{
 
