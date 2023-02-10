@@ -1,5 +1,6 @@
 package com.example.NasaInterview.Model.Nasa;
 
+import com.fasterxml.jackson.annotation.JsonAlias;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
@@ -14,7 +15,9 @@ public class Links {
 
     @JsonProperty("next")
     private String next;
+
     @JsonProperty("prev")
+    @JsonAlias("previous")
     private String prev;
     @JsonProperty("self")
     private String self;
